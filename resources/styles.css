@@ -63,6 +63,13 @@ ul {
 }
 li {
     display: inline-block;
+    cursor: pointer;
+}
+li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.25rem;
 }
 body {
 
@@ -72,6 +79,7 @@ section {
 }
 button {
     border: none;
+    border-radius: 0.25rem;
     padding: 1rem;
     background: #b01212;
     color: #fff;
@@ -121,19 +129,59 @@ header nav {
     display: flex;
     align-items: center;
 }
-header nav i {
-    position: relative;
-    right: 25%;
-    font-size: 1.75rem;
+.checkbtn {
+    position: fixed;
+    left: 2.5rem;;
+    font-size: 2rem;
+    transition: all 0.15s linear;
+    cursor: pointer;
+}
+#check {
+    display: none;
+}
+@media only screen and (max-width: 952px) {
+    
+}
+@media only screen and (max-width: 858px) {
+    /* .checkbtn {
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #b01212;
+        top: 18vh;
+    }
+    ul img {
+        
+    } */
+}
+header i:hover {
+    opacity: 0.8;
+
 }
 header img {
     margin: 0 1.5rem;
+    cursor: pointer;
 }
 header ul {
 
 }
 header ul li {
     margin: 1.5rem;
+}
+header ul li a {
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    transition: all 0.2s;
+}
+header ul li a:hover {
+    background-color: red;
+    opacity: 0.9;
+}
+header ul li a:active {
+    opacity: 0.6;
 }
 .banner {
     margin: 0;
@@ -153,6 +201,7 @@ header ul li {
     background-size: cover;
     height: 80%;
     width: 100%;
+    animation: change 12s infinite ease-in-out;
 }
 .content {
      /* transform: translate(-50%, -50%); */
@@ -167,4 +216,18 @@ header ul li {
 .products {
     position: relative;
     top: 9.5rem
+}
+@keyframes change {
+    0%
+    {
+        background-image: url(Banner1.jpg);
+    }
+    50%
+    {
+        background-image: url(Banner2.jpg);
+    }
+    100%
+    {
+        background-image: url(Banner3.jpg);
+    }
 }
