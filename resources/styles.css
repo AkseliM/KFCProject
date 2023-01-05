@@ -74,8 +74,14 @@ li a {
 body {
 
 }
+label {
+    display: none;
+}
 section {
     margin: 0 3rem;
+}
+input {
+    display: none;
 }
 button {
     border: none;
@@ -108,9 +114,14 @@ button:active {
     transform: scale(0.99);
     -webkit-box-shadow: 0px 10px rgba(128, 128, 128, 1), 0px 4px rgba(118, 118, 118, 1), 0px 5px rgba(108, 108, 108, 1), 0px 6px rgba(98, 98, 98, 1), 0px 7px rgba(88, 88, 88, 1), 0px 8px rgba(78, 78, 78, 1), 0px 10px 2px 0px rgba(128, 128, 128, .6);
 }
-h1 {
+h1, h2 {
     font-family: "National 2 Condensed", sans-serif;
+}
+h1 {
     font-size: 3.75rem;
+}
+h2 {
+    font-size: 3rem;
 }
 /* Header */
 
@@ -130,58 +141,100 @@ header nav {
     align-items: center;
 }
 .checkbtn {
+    display: block;
     position: fixed;
-    left: 2.5rem;;
+    left: 2.5rem;
     font-size: 2rem;
     transition: all 0.15s linear;
     cursor: pointer;
 }
-#check {
-    display: none;
+#check:checked ~ #menu {
+    left: 0;
+}
+#check:checked ~ #menu .checkbtn {
+    left: 2.5rem;
 }
 @media only screen and (max-width: 952px) {
     
-}
-@media only screen and (max-width: 858px) {
-    /* .checkbtn {
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #b01212;
-        top: 18vh;
-    }
-    ul img {
-        
-    } */
 }
 header i:hover {
     opacity: 0.8;
 
 }
-header img {
+.logoDiv {
+    width: 100%;
+}
+header nav img {
+    justify-self: center;
     margin: 0 1.5rem;
     cursor: pointer;
 }
-header ul {
-
+#menu {
+    /* display: none; */
+    display: inline-block;
+    position: fixed;
+    width: 17.5rem;
+    left: -100%;
+    height: 100vh;
+    background: #b01212;
+    top: 0vh;
+    z-index: 1;
+    text-align: left;
+    transition: all .5s;
+    text-align: left;
 }
-header ul li {
-    margin: 1.5rem;
+#menu .checkbtn {
+    top: 7.25%;
+    left: -100%;
 }
-header ul li a {
-    border-radius: 0.25rem;
-    padding: 0.25rem 0.75rem;
-    transition: all 0.2s;
+#menu #links,
+#menu #lang{
+    /* display: none; */
+    display: block;
+    position: relative;
+    left: 0;
+    top: 15vh;
+    text-align: left;
+    margin-left: -1.20rem;
+    font-size: 2rem;
+    margin-top: 3.438rem;
 }
-header ul li a:hover {
+#menu li a:hover {
     background-color: red;
     opacity: 0.9;
 }
-header ul li a:active {
+#menu li a:active {
     opacity: 0.6;
+}
+#menu #links li, #menu #lang li {
+    margin: 1.5rem;
+    display: block;
+    line-height: 1rem;
+}
+#menu li a{
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    transition: all 0.2s;
+    font-size: 2rem;
+}
+#menu #links li a, #menu i, #menu p, .pItem {
+    color: #fff;
+}
+#menu #lang li a, .pItem {
+    color: #000;
+}
+#menu #socials,
+#menu p {
+    position: relative;
+    text-align: center;
+}
+#menu #socials {
+    display: block;
+    top: 25rem;
+}
+#menu p {
+    top: 27rem;
+    font-size: 15px;
 }
 .banner {
     margin: 0;
@@ -215,7 +268,74 @@ header ul li a:active {
 }
 .products {
     position: relative;
-    top: 9.5rem
+    top: 9.5rem;
+}
+.products ul {
+    overflow: scroll;
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: flex-start;
+ /* vertical-align: baseline; */
+    white-space: nowrap;
+    margin-left: -.5rem;
+    margin-bottom: 3rem;
+}
+.products ul li {
+    display: flex;  
+    padding: 2rem .5rem;
+}
+.products ul li a {
+    color: #8f8f8f;
+    font-weight: 400;
+}
+.products ul li:hover a{
+    color: red;
+}
+.products ul li:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
+#navbar {
+    overflow: hidden;
+    background: #fff;
+    right: 5%;
+}
+.sticky {
+    position: fixed;
+    top: 18vh;
+    width: 90%;
+} 
+.sticky + .content {
+    padding-top: 60px;
+}
+.pItem {
+    display: inline-flex;
+    height: 240px;
+    width: 240px;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.20rem;
+    border-radius: 0.25rem;
+    flex-wrap: wrap;
+}
+.pItem h3, .pItem img {
+    align-self: center;
+    cursor: pointer;
+}
+.pItem img {
+    justify-self: center;
+    height: 130px;
+    width: 150px;
+}
+.pItem:hover {
+    background-color: #ebe6e6;
+}
+.pItem img:hover {
+    transform: scale(1.15);
+    transition: all 0.2s linear;
 }
 @keyframes change {
     0%

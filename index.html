@@ -17,13 +17,38 @@
         <label for="check" class="checkbtn">
           <i class="fa-solid fa-bars"></i>
         </label>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+        <div class="logoDiv">
           <a><img src="resources/KFC_logo.svg.png" height="135rem"></a>
-          <li><a href="#">Location</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+        </div>
+        <div id="menu">
+          <label for="check" class="checkbtn">
+            <i class="fa-solid fa-arrow-left"></i>
+          </label>
+          <ul id="links">
+            <li><a href="#">Ruokalista</a></li>
+            <li><a href="#">Ravintola</a></li>
+            <li><a href="#">Kampanjat</a></li>
+            <li><a href="#">Uutiset</a></li>
+            <li><a href="#">Työpaikat</a></li>
+          </ul>
+          <ul id="lang">
+            <li><a>English</a></li>
+            <li><a>Svenska</a></li>
+          </ul>
+          <ul id="socials">
+            <li><a href="https://www.facebook.com/KFC.fi" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/kfc_fin/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/kfcsuomi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.tiktok.com/@kfc_fin?" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+          </ul>
+          <p>© 2022 KFC International Holdings Inc.</p>
+        </div>
+     <!-- <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul> -->
       </nav>
     </header>
     <section class="banner">
@@ -37,45 +62,372 @@
     </section>
     <section class="products">
       <h1>Ruokalista</h1>
-      <nav>
+      <nav id="navbar">
         <ul>
-          <li>Buckets</li>
-          <li>Kana</li>
-          <li>Hampurilaiset</li>
-          <li>Wrapit</li>
-          <li>Ateriat</li>
-          <li>veggie</li>
-          <li>Ranskalaiset</li>
-          <li>Snacks</li>
-          <li>Salaatit</li>
-          <li>Dipit</li>
-          <li>Donitsit</li>
-          <li>Jäätelöt ja Pirtelöt</li>
-          <li>Kylmät juomat</li>
-          <li>Kuumat juomat</li>
+          <li><a href="#bucket">Buckets</a></li>
+          <li><a href="#chick">Kana</a></li>
+          <li><a href="#burger">Hampurilaiset</a></li>
+          <li><a href="#wraps">Wrapit</a></li>
+          <li><a href="#meals">Ateriat</a></li>
+          <li><a href="#veggie">veggie</a></li>
+          <li><a href="#fries">Ranskalaiset</a></li>
+          <li><a href="#snacks">Snacks</a></li>
+          <li><a href="#salad">Salaati</a></li>
+          <li><a href="#dips">Dipit</a></li>
+          <li><a href="#don">Donitsit</a></li>
+          <li><a href="#ice">Jäätelöt ja Pirtelöt</a></li>
+          <li><a href="#cold">Kylmät juomat</a></li>
+          <li><a href="#hot">Kuumat juomat</a></li>
         </ul>
       </nav>
-      <div class=ProductContainer>
-      <h2>Buckets</h2>
-        <div>
-          <img src="resources/Hot_wings.png">
+      <div class=ProductContainer id="bucket">
+        <h2>Buckets</h2>
+        <div class="pItem">
+          <a><img src="resources/Hot_wings.png"></a>
+          <h3><a>Hot wings bucket</a></h3>
         </div>
-        <div>
-          <img src="resources/Duetbucket (1).png">
+        <div class="pItem">
+          <a><img src="resources/Duetbucket (1).png"></a>
+          <h3><a>Bucket<br>duet</a></h3>
         </div>
-        <div>
-          <img src="resources/Duetbucket (2).png">
+        <div class="pItem">
+          <a><img src="resources/Duetbucket (2).png"></a>
+          <h3><a>Family<br>Bucket</a></h3>
         </div>
-        <div>
-          <img src="resources/Duetbucket.png">
+        <div class="pItem">
+          <a><img src="resources/Duetbucket.png"></a>
+          <h3><a>Sander's<br>special</a></h3>
         </div>
-        <div>
-          <img src="resources/Chicken-bucket.png">
+        <div class="pItem">
+          <a><img src="resources/Chicken-bucket.png"></a>
+          <h3><a>Crispy strips bucket</a></h3>
         </div>
       </div>
-      <div>
+
+    <div class="ProductContainer" id="chick">
+      <h2>Kana</h2>
+      <div class="pItem">
+        <a><img src="resources/Hot_wings_3.png"></a>
+        <h3><a>Hot wings</a></h3>
+      </div>
+      <div class="pItem">
+        <a><img src="resources/Original_strips_3.png"></a>
+        <h3><a>Strips__</a></h3>
+      </div>
+      <div class="pItem">
+        <a><img src="resources/Drumstick3.png"></a>
+        <h3><a>Drumsticks</a></h3>
+      </div>
+    </div>
+    
+    <div class="ProductContainer" id="burger">
+      <h2>Hampurilaiset</h2>
+      <div class="pItem">
+        <a><img src="resources/Chickenburger.png"></a>
+        <h3><a>Kanahampurilainen</a></h3>
+      </div>
+      <div class="pItem">
+        <a><img src="resources/Cheeseburger.png"></a>
+        <h3><a>Juustohampurilainen</a></h3>
+      </div>
+      <div class="pItem">
+        <a><img src="resources/Classic_burger.png"></a>
+        <h3><a>Classic Burger</a></h3>
+      </div>
+      <div class="pItem">
+        <a><img src="resources/Classic_burger.png"></a>
+        <h3><a>Zinger Burger</a></h3>
+      </div>
+      <div class="pItem">
+        <a><img src="resources/Grander-Texas.png"></a>
+        <h3><a>Grander Texas Burger</a></h3>
+      </div>
+      </div>
+
+      <div class="ProductContainer" id="wraps">
+        <h2>Wrapit</h2>
+        <div class="pItem">
+          <img src="resources/Boxmaster_.png">
+          <h3><a>Boxmaster</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Twister.png">
+          <h3><a>Twister<br>Original</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/iTwister.png">
+          <h3><a>i-Twister tortilla<br>honey and mustard</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/iTwister.png">
+          <h3><a>i-Twister tortilla<br>BBQ</a></h3>
+        </div> 
+      </div>
+
+      <div class="ProductContainer" id="meals">
+        <h2>Ateriat</h2>
+        <div class="pItem">
+          <img src="resources/Chickenburger_meal.png">
+          <h3><a>Kanahampurilais-<br>ateria</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Cheeseburger_meal.png">
+          <h3><a>Juustohampurilais-<br>ateria</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Classic_meal.png">
+          <h3><a>Classic ateria</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Classic_meal.png">
+          <h3><a>Zinger ateria</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Grander_meal.png">
+          <h3><a>Grander Texas ateria</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/TwisterOriginal_meal.png">
+          <h3><a>Twister Original ateria</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Boxmaster_meal.png">
+          <h3><a>Boxmaster ateria</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/6hotwings_meal.png">
+          <h3><a>Hot Wings ateria</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Strips_build_meal.png">
+          <h3><a>Strips ateria</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/2Drumstick_meal.png">
+          <h3><a>Drumstick ateria</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Chickenburger_meal.png">
+          <h3><a>Lasten<br>kanahampurilaisateria</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Strips_build_meal.png">
+          <h3><a>Lasten strips-ateria</a></h3>
+        </div> 
+      </div>
+
+      <div class="ProductContainer" id="veggie">
+        <h2>Veggie</h2>
+        <div class="pItem">
+          <img src="resources/VEGGIE-TWISTER.png">
+          <h3><a>Veggie Twister Tortilla</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/VEGGIE-STRIPS-3pcs.png">
+          <h3><a>Veggie Strips</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/VEGGIE-FILET-BURGER.png">
+          <h3><a>Veggie Classic burger</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/VEGGIE-TWISTER-M-MEAL.png">
+          <h3><a>Veggie Twister<br>Tortilla meal</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/VEGGIE-STRIPS-3pcs-M-MEAL.png">
+          <h3><a>Veggie Strips meal</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/VEGGIE-FILET-BURGER-M-MEAL.png">
+          <h3><a>Veggie classic<br>Burger  ateria</a></h3>
+        </div> 
+      </div>
+
+      <div class="ProductContainer" id="fries">
+        <h2>Ranskalaiset</h2>
+        <div class="pItem">
+          <img src="resources/Fries_L.png">
+          <h3><a>Ranskalaiset</a></h3>
+        </div> 
+      </div>
+
+      <div class="ProductContainer" id="snacks">
+        <h2>Snacks</h2>
+        <div class="pItem">
+          <img src="resources/Camembert-bites.png">
+          <h3><a>Camembert Bites</a></h3>
+        </div> 
+      </div>
+
+      <div class="ProductContainer" id="salad">
+        <h2>Salaatit</h2>
+        <div class="pItem">
+          <img src="resources/Caesar.png">
+          <h3><a>Caesar salaatti</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Colesaw.png">
+          <h3><a>Coleslaw salaatti</a></h3>
+        </div> 
+      </div>
+
+      <div class="ProductContainer" id="dip">
+        <h2>Dipit</h2>
+        <div class="pItem">
+          <img src="resources/Fritez-Sauce.png">
+          <h3><a>Frites kastike</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/BBQ-sauce.png">
+          <h3><a>BBQ kastike</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Sweetnsour.png">
+          <h3><a>Sweet'n'Sour</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Garlic-sauce.png">
+          <h3><a>Valkosipulidippi</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Mustard.png">
+          <h3><a>Sinappi</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Sweet-chilli-1.png">
+          <h3><a>Chilli kastike</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Curry-mango.png">
+          <h3><a>Curry mango kastike</a></h3>
+        </div> 
+        <div class="pItem">
+          <img src="resources/Salsa-Extra-hot.png">
+          <h3><a>Salsa extra hot</a></h3>
+        </div> 
+      </div>
+
+      <div class="ProductContainer" id="don">
+        <h2>Donitsit</h2>
+        <div class="pItem">
+          <img src="resources/Chocolate_donut.png">
+          <h3><a>Suklaadonitsi</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Berry-doughnut.png">
+          <h3><a>Marjadonitsi</a></h3>
+        </div>
+      </div>
+
+      <div class="ProductContainer" id="ice">
+        <h2>Jäätelöt & Pirtelöt</h2>
+        <div class="pItem">
+          <img src="resources/Vanilla-cone.png">
+          <h3><a>Vaniljapehmis</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Icecream-with-chocolate.png">
+          <h3><a>Suklaa sundae</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Icecream-with-strawberry.png">
+          <h3><a>Mansikka sundae</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Icecream-with-caramel.png">
+          <h3><a>Kinuski sundae</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Chocolate-milkshake.png">
+          <h3><a>Suklaapirtelö</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Vanilla-milkshake.png">
+          <h3><a>Vaniljapirtelö</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Strawberry-milkshake.png">
+          <h3><a>Mansikkapirtelö</a></h3>
+        </div>
+      </div>
+
+      <div class="ProductContainer" id="cold">
+        <h2>Kylmät juomat</h2>
+        <div class="pItem">
+          <img src="resources/Pepsi_Drink.png">
+          <h3><a>Pepsi</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Pepsi_Drink.png">
+          <h3><a>Pepsi Max</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/7up_Drink.png">
+          <h3><a>7Up</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Jaffa.png">
+          <h3><a>Jaffa</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Blueberry-lemonade.png">
+          <h3><a>Blueberry Lemonade</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Passionfruit-lemonade.png">
+          <h3><a>Passionfruit Lemonade</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Novelle_carb.png">
+          <h3><a>Mineraalivesi 0,5l</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Novelle_spring.png">
+          <h3><a>Lähdevesi 0,5l</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/GmApple-1.png">
+          <h3><a>God Morgon 0,25l<br>omena</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/GmOrange.png">
+          <h3><a>God Morgon 0,25l apelsiini</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Milk.png">
+          <h3><a>Maito</a></h3>
+        </div>
+      </div>
+
+      <div class="ProductContainer" id="hot">
+        <h2>Kuumat juomat</h2>
+        <div class="pItem">
+          <img src="resources/Americano.png">
+          <h3><a>Coffee Americano</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Capuccino.png">
+          <h3><a>Cappuccino</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Latte.png">
+          <h3><a>Latte</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Tea.png">
+          <h3><a>Tee</a></h3>
+        </div>
+        <div class="pItem">
+          <img src="resources/Americano.png">
+          <h3><a>Filtered Coffee</a></h3>
+        </div>
       </div>
     </section>
+    <footer>
+
+    </footer>
+    <script src="resources/index.js"></script>
   </body>
 
 </html>
